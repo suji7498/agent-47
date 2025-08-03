@@ -1,9 +1,9 @@
-# Installation Guide - WP Chatbot n8n
+# Installation Guide - Agent-47
 
 ## Quick Installation
 
 ### Step 1: Prepare the Plugin
-1. Ensure all plugin files are in the `wp-chatbot-n8n` folder
+1. Ensure all plugin files are in the `agent-47` folder
 2. The folder structure should match the expected WordPress plugin format
 
 ### Step 2: Install via WordPress Admin
@@ -15,7 +15,7 @@
 6. Click **Activate Plugin**
 
 ### Step 3: Configure the Plugin
-1. Go to **Settings > Chatbot n8n**
+1. Go to **Settings > Agent-47**
 2. Enter your n8n webhook URL
 3. Configure other settings as needed
 4. Click **Save Settings**
@@ -24,8 +24,8 @@
 
 If the WordPress plugin installer doesn't work:
 
-1. **Upload Files**: Upload the `wp-chatbot-n8n` folder to `/wp-content/plugins/`
-2. **Activate**: Go to **Plugins** in WordPress admin and activate "WP Chatbot n8n"
+1. **Upload Files**: Upload the `agent-47` folder to `/wp-content/plugins/`
+2. **Activate**: Go to **Plugins** in WordPress admin and activate "Agent-47"
 3. **Configure**: Follow Step 3 above
 
 ## Troubleshooting Installation Issues
@@ -33,7 +33,7 @@ If the WordPress plugin installer doesn't work:
 ### Common Problems:
 
 1. **"Plugin file does not exist"**
-   - Ensure the main plugin file `wp-chatbot-n8n.php` is in the root of the plugin folder
+   - Ensure the main plugin file `agent-47.php` is in the root of the plugin folder
    - Check that the plugin header is properly formatted
 
 2. **"Plugin could not be activated"**
@@ -53,8 +53,8 @@ If the WordPress plugin installer doesn't work:
 
 ### Required Files Check:
 ```
-wp-chatbot-n8n/
-├── wp-chatbot-n8n.php          ✓ Required
+agent-47/
+├── agent-47.php          ✓ Required
 ├── uninstall.php               ✓ Required
 ├── includes/                   ✓ Required
 │   ├── class-chatbot-core.php

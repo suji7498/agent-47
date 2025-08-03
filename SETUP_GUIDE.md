@@ -125,7 +125,7 @@ Your response message here
 1. **Test Connection**: Use the built-in test in WordPress admin
 2. **Debug Script**: Use `debug-webhook.php` for detailed analysis
 3. **n8n Logs**: Check your n8n instance logs for errors
-4. **WordPress Logs**: Check for entries starting with "WP Chatbot n8n:"
+4. **WordPress Logs**: Check for entries starting with "Agent-47:"
 
 ## Advanced Configuration
 
