@@ -1,4 +1,4 @@
-# Agent-47
+# Agent-47 aka wp-chatbot-n8n
 
 A flexible WordPress plugin that integrates with n8n workflows to create intelligent chatbots for your website.
 
@@ -248,4 +248,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 - **Developer:** Suraj Jadhao
 - **LinkedIn:** [https://www.linkedin.com/in/suraj-jd/](https://www.linkedin.com/in/suraj-jd/)
+
 - **GitHub:** [https://github.com/suji7498](https://github.com/suji7498) 
