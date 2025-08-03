@@ -1,4 +1,4 @@
-# Agent-47 aka wp-chatbot-n8n
+# Agent-47
 
 A flexible WordPress plugin that integrates with n8n workflows to create intelligent chatbots for your website.
 
@@ -108,11 +108,11 @@ Your response message here
 
 ### Manual Installation
 1. Download the plugin files
-2. Upload to `/wp-content/plugins/wp-chatbot-n8n/`
+2. Upload to `/wp-content/plugins/agent-47/`
 3. Activate the plugin through the 'Plugins' menu in WordPress
 
 ### Requirements
-- WordPress 5.0 or higher
+- WordPress 5.8 or higher
 - PHP 7.4 or higher
 - n8n instance (local or cloud)
 
@@ -177,7 +177,7 @@ The plugin includes several debugging tools:
 
 ### File Structure
 ```
-wp-chatbot-n8n/
+agent-47/
 ├── admin/                 # Admin interface
 ├── assets/               # Static assets (CSS, JS, images)
 ├── includes/             # Core plugin classes
@@ -195,13 +195,13 @@ The plugin provides several hooks for customization:
 
 ```php
 // Modify webhook response
-add_filter('wp_chatbot_n8n_response', 'custom_response_handler', 10, 2);
+add_filter('agent_47_response', 'custom_response_handler', 10, 2);
 
 // Add custom validation
-add_filter('wp_chatbot_n8n_validate_message', 'custom_validation', 10, 1);
+add_filter('agent_47_validate_message', 'custom_validation', 10, 1);
 
 // Modify chatbot settings
-add_filter('wp_chatbot_n8n_settings', 'custom_settings', 10, 1);
+add_filter('agent_47_settings', 'custom_settings', 10, 1);
 ```
 
 ## Support
@@ -248,5 +248,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 - **Developer:** Suraj Jadhao
 - **LinkedIn:** [https://www.linkedin.com/in/suraj-jd/](https://www.linkedin.com/in/suraj-jd/)
-
 - **GitHub:** [https://github.com/suji7498](https://github.com/suji7498) 
