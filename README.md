@@ -13,6 +13,12 @@ A flexible WordPress plugin that integrates with n8n workflows to create intelli
 - 📱 **Responsive Design**: Works on desktop and mobile
 - 🔒 **Secure**: Built-in security features and authentication support
 - 🐛 **Debug Tools**: Comprehensive debugging and testing utilities
+- 🚀 **Enterprise Scalability**: Supports 100+ concurrent users with session management
+- 📊 **Real-time Monitoring**: Built-in dashboard for system performance tracking
+- 💬 **Enhanced Interaction**: Copy text and click links in chatbot messages
+- ⚡ **Rate Limiting**: Per-session rate limiting to prevent abuse
+- 🧹 **Auto Cleanup**: Automatic session and conversation cleanup
+- 📈 **Performance Metrics**: Track system health and user engagement
 
 ## Quick Start
 
@@ -218,6 +224,52 @@ add_filter('agent_47_settings', 'custom_settings', 10, 1);
 4. Use the debug tools provided
 
 ## Changelog
+
+### Version 1.3.1 - WordPress Plugin Store Compliance Release
+- **Fixed: WordPress Plugin Store Compliance** - Resolved all critical errors and warnings for plugin store submission
+- **Enhanced: Security** - Fixed output escaping issues in admin and monitoring pages
+- **Improved: Database Operations** - Fixed %i placeholder compatibility for WordPress versions below 6.2
+- **Cleaned: Production Code** - Removed all error_log() debug statements from production files
+- **Fixed: Input Sanitization** - Properly sanitized and unslashed all user inputs including HTTP_USER_AGENT
+- **Updated: Short Description** - Reduced readme.txt short description to comply with 150 character limit
+- **Enhanced: Uninstall Process** - Improved database cleanup and table removal in uninstall routine
+
+### Version 1.3.0 - Code Cleanup Release
+- **Removed: Conversations Feature** - Completely removed the conversations option from backend as it was not useful and did not display any results
+- **Cleaned: Database Structure** - Removed conversations table and related database operations
+- **Simplified: Admin Interface** - Removed conversations submenu and page from WordPress admin
+- **Optimized: Monitoring Dashboard** - Removed conversations statistics from monitoring page
+- **Streamlined: Core Functionality** - Removed conversation history functions from core and webhook classes
+- **Enhanced: Code Cleanup** - Removed all conversations-related code and references throughout the plugin
+
+### Version 1.2.0 - Enterprise Scalability Release
+- **Major Feature: Concurrent User Support** - Now handles 100+ concurrent users with session management
+- **New: Monitoring Dashboard** - Real-time system monitoring with performance metrics
+- **Enhanced: Message Interaction** - Users can now copy text and click links in chatbot messages
+- **Improved: Rate Limiting** - Per-session rate limiting (60 messages/minute) to prevent abuse
+- **New: Session Management** - Automatic cleanup of expired sessions and conversation history
+- **Enhanced: Database Structure** - Optimized database tables for high concurrency
+- **New: System Health Monitoring** - Visual indicators for system load and performance
+- **Improved: Error Handling** - Better error messages and graceful degradation under load
+- **Enhanced: Security** - Additional security measures for high-traffic scenarios
+- **New: Admin Interface** - Dedicated monitoring and conversations pages in admin panel
+- **Improved: User Experience** - Right-click context menu for text selection and copying
+- **Enhanced: Link Handling** - Better link detection and clickable URLs in messages
+- **New: Performance Metrics** - Track peak concurrent users and system performance
+- **Improved: Memory Management** - Efficient memory usage and automatic cleanup
+- **Enhanced: Scalability** - Production-ready for high-traffic websites
+
+### Version 1.1.0
+- Fixed hover functionality interference with other page elements
+- Improved CSS scoping to prevent conflicts with other plugins/themes
+- Enhanced conditional loading of resources (only when chatbot is enabled)
+- Fixed critical security issues (SQL injection, XSS prevention, input sanitization)
+- Added proper nonce verification and CSRF protection
+- Implemented WordPress caching for better performance
+- Fixed timezone safety issues (gmdate instead of date)
+- Reduced readme.txt tags to comply with WordPress.org guidelines
+- Added comprehensive error handling and debugging improvements
+- Enhanced plugin deactivation cleanup
 
 ### Version 1.0.0
 - Initial release
